@@ -106,3 +106,84 @@ nav li a:hover {
   object-fit: cover;     
   background: #000000;      
 }
+/* responsive for tablets */
+@media (max-width: 1200px) {
+  .hero {
+    width: 95vw;
+    height: 600px;
+  }
+
+  .hero-logo {
+    width: 120px;
+    height: 120px;
+  }
+  nav {
+    margin-left: 40px;
+    gap: 20px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+}
+
+/* responsive for mobile */
+@media (max-width: 700px) 
+  { header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .hero {
+    width: 100vw;
+    height: 350px;
+    border-radius: 1em;
+    margin: 10px 0;
+  }
+  .hero-logo {
+    position: static;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+  }
+
+   nav li a {
+    font-size: 1.1rem;
+    padding: 0.5em;
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
+}
+.burger {
+  display: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  margin-left: 20px;
+}
+@media (max-width: 700px) {
+  .burger {
+    display: block;
+  }
+  nav {
+    display: none;
+    width: 100%;
+  }
+  nav.active {
+    display: flex;
+    flex-direction: column;
+  }
+}
