@@ -8,23 +8,34 @@ body {
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background: #DFDFDF;
-  padding: 10px 0 0 0;
+  padding: 10px 20px 0 20px;
   border-radius: 30px 30px 0 0;
+  position: relative;
+  z-index: 3000;
 }
 
-.logo img {
+.hero-logo {
+  position: static;
   width: 120px;
-  margin-left: 20px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #000000;
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+  z-index: 2;
 }
 
 nav {
   display: flex;
   gap: 40px;
-  margin-left: 230px;
+  margin-left: 0;
 }
 
- nav ul {
+nav ul {
   display: flex;
   list-style: none;
   padding: 0;
@@ -46,6 +57,16 @@ nav li a {
 nav li a:hover {
   background: #444;
   color: #fff;
+}
+
+.burger {
+  display: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  margin-left: 20px;
+  background: none;
+  border: none;
+  z-index: 3001;
 }
 
 .hero {
@@ -93,19 +114,6 @@ nav li a:hover {
   margin: 0;
 }
 
-.hero-logo {
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  width: 240px;
-  height: 240px;         
-  z-index: 2;
-  padding: 5px;
-  box-sizing: border-box;
-  border-radius: 50%;    
-  object-fit: cover;     
-  background: #000000;      
-}
 /* responsive for tablets */
 @media (max-width: 1200px) {
   .hero {
@@ -114,15 +122,8 @@ nav li a:hover {
   }
 
   .hero-logo {
-    width: 120px;
-    height: 120px;
-    position:static;
-    margin-bottom: 10px;
-  }
-  nav {
-    margin-left: 0px;
-    margin-top: 10px;
-    gap: 20px;
+    width: 80px;
+    height: 80px;
   }
 
   nav ul {
@@ -132,73 +133,58 @@ nav li a:hover {
 
 /* responsive for mobile */
 @media (max-width: 700px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 0 10px;
+    background: #DFDFDF;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    z-index: 3000;
+  }
   .hero-logo {
-    display: block;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 60px;
-    height: 60px;
+    position: static;
+    width: 50px;
+    height: 50px;
     margin: 0;
     border-radius: 50%;
     z-index: 2002;
+    padding: 2px;
+  }
+  .burger {
+    display: block;
+    position: static;
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 3001;
+    margin-left: 0;
+    margin-right: 0;
+    background: none;
+    border: none;
   }
   nav {
     display: none;
     position: absolute;
-    top: 0;
+    top: 100%;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 70px); 
     background: #DFDFDF;
     z-index: 2000;
     flex-direction: column;
     padding-top: 0;
+    align-items: flex-start;
   }
   nav.active {
     display: flex;
   }
   nav ul {
-    margin-top: 100px; /* Push menu below logo */
+    margin-top: 30px;
     flex-direction: column;
     gap: 10px;
     width: 100%;
-    padding: 0;
-  }
-}
-.burger {
-  display: none;
-  font-size: 2.5rem;
-  cursor: pointer;
-  margin-left: 20px;
-}
-@media (max-width: 700px) {
-  .burger {
-    display: block;
-    position: absolute;     
-    top: 20px;               
-    right: 20px;             
-    z-index: 2001;           
-  }
-  nav {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    background: #DFDFDF;
-    z-index: 2000;           
-    flex-direction: column;
-    padding-top: 60px; 
-  }
-  nav.active {
-    display: flex;
-  }
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    padding: 0;
+    padding: 0 0 0 20px;
   }
   nav li a {
     font-size: 1.1rem;
@@ -206,5 +192,11 @@ nav li a:hover {
     width: 100%;
     display: block;
     text-align: left;
+  }
+  .hero {
+    width: 100vw;
+    height: 350px;
+    border-radius: 1em;
+    margin: 10px 0;
   }
 }
