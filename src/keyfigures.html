@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Timeline Of Computing</title>
   <link rel="stylesheet" href="styles/main.css">
@@ -8,27 +9,32 @@
 </head>
 <body>
   <header>
+  <a href="index.html">
     <img class="hero-logo" src="images/logo.png" alt="THOC Logo">
-    <nav>
-      <ul>
-        <li><a href="index.html">Timeline Of Computing</a></li>
-        <li><a href="keyfigures.html">Key Figures & Inventors</a></li>
-        <li><a href="resourcesrefernces.html">Resources & References</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
+  </a>
+  <div class="burger" id="burger">&#9776;</div>
+  <nav>
+    <ul>
+      <li><a href="timelineofcomputing.html">Timeline Of Computing</a></li>
+      <li><a href="keyfigures.html">Key Figures & Inventors</a></li>
+      <li><a href="resourcesrefernces.html">Resources & References</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+</header>
   <main>
   <div class="hero">
     <div class="hero-content">
-      <h1 class="hero-title">TIMELINE OF COMPUTING</h1>
-      <p class="hero-desc">
-        covering various periods, of the<br>
-        invention of the first rise of<br>
-        electronic computers
       </p>
     </div>
   </div>
 </main>
+<script>
+  const burger = document.getElementById('burger');
+  const nav = document.querySelector('nav');
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
