@@ -120,7 +120,7 @@ nav li a:hover {
 @media (max-width: 1200px) {
   .hero {
     width: 95vw;
-    height: 90vh;
+    height: 600px;
   }
 
   .hero-logo {
@@ -197,9 +197,9 @@ nav li a:hover {
   }
   .hero {
     width: 95vw;
-    height: 95vh;
+    height: 90vh;
     border-radius: 1em;
-    margin: 10px 0;
-    background: url('../images/backgroundforphone.png');
+    margin: 5px 0;
+    background: url('../images/backgroundforphone.png') center/cover no-repeat;
   }
 }
