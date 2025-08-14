@@ -22,32 +22,61 @@
       </ul>
     </nav>
   </header>
-
   <main>
-    <div class="timeline-book">
-      <div class="book-pages">
-        <div class="page left-page">
-          test
-        </div>
-        <div class="page right-page">
-          test
-        </div>
+    <div class="timeline">
+  <div class="timeline-event active" data-era="1">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <h3 class="timeline-title">1940 - 1956</h3>
+      <button class="timeline-toggle">Show Details</button>
+      <div class="timeline-details">
+        <p>This era marks the beginning of electronic computing, including the invention of the first general-purpose computers.</p>
       </div>
-      <aside class="timeline-bookmarks">
-        <a href="#era1" class="bookmark era1">1940 - 1956</a>
-        <a href="#era2" class="bookmark era2">1964 - 1971</a>
-        <a href="#era3" class="bookmark era3">1972 - 2010</a>
-        <a href="#era4" class="bookmark era4">2010 - PRESENT</a>
-      </aside>
     </div>
-  </main>
-
+  </div>
+  <div class="timeline-event" data-era="2">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <h3 class="timeline-title">1964 - 1971</h3>
+      <button class="timeline-toggle">Show Details</button>
+      <div class="timeline-details">
+        <p>The rise of integrated circuits and the miniaturization of computers, making them more accessible.</p>
+      </div>
+    </div>
+  </div>
+  <div class="timeline-event" data-era="3">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <h3 class="timeline-title">1972 - 2010</h3>
+      <button class="timeline-toggle">Show Details</button>
+      <div class="timeline-details">
+        <p>Personal computers, the internet, and mobile technology revolutionize society and communication.</p>
+      </div>
+    </div>
+  </div>
+  <div class="timeline-event" data-era="4">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <h3 class="timeline-title">2010 - PRESENT</h3>
+      <button class="timeline-toggle">Show Details</button>
+      <div class="timeline-details">
+        <p>Cloud computing, AI, and the digital age continue to transform how we live and work.</p>
+      </div>
+    </div>
+  </div>
+</div>
   <script>
-    const burger = document.getElementById('burger');
-    const nav = document.querySelector('nav');
-    burger.addEventListener('click', () => {
-      nav.classList.toggle('active');
-    });
-  </script>
+document.querySelectorAll('.timeline-toggle').forEach((btn, i) => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.timeline-event').forEach(ev => ev.classList.remove('active'));
+    this.closest('.timeline-event').classList.add('active');
+  });
+});
+const burger = document.getElementById('burger');
+  const nav = document.querySelector('nav');
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
