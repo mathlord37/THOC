@@ -65,18 +65,23 @@
     </div>
   </div>
 </div>
-  <script>
-document.querySelectorAll('.timeline-toggle').forEach((btn, i) => {
+ <script>
+const burger = document.getElementById('burger');
+const nav = document.querySelector('nav');
+burger.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
+document.querySelectorAll('.timeline-toggle').forEach((btn) => {
   btn.addEventListener('click', function() {
-    document.querySelectorAll('.timeline-event').forEach(ev => ev.classList.remove('active'));
-    this.closest('.timeline-event').classList.add('active');
+    const event = this.closest('.timeline-event');
+    if (event.classList.contains('active')) {
+      event.classList.remove('active');
+    } else {
+      document.querySelectorAll('.timeline-event').forEach(ev => ev.classList.remove('active'));
+      event.classList.add('active');
+    }
   });
 });
-const burger = document.getElementById('burger');
-  const nav = document.querySelector('nav');
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
 </script>
 </body>
 </html>
