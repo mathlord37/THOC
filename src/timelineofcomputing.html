@@ -24,64 +24,136 @@
   </header>
   <main>
     <div class="timeline">
-  <div class="timeline-event active" data-era="1">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-      <h3 class="timeline-title">1940 - 1956</h3>
-      <button class="timeline-toggle">Show Details</button>
-      <div class="timeline-details">
-        <p>This era marks the beginning of electronic computing, including the invention of the first general-purpose computers.</p>
+      <div class="timeline-event active" data-era="1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">1940 - 1956</h3>
+          <button class="timeline-toggle">Show Details</button>
+          <div class="timeline-details">
+            <p>This era marks the beginning of electronic computing, including the invention of the first general-purpose computers.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-event" data-era="2">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">1964 - 1971</h3>
+          <button class="timeline-toggle">Show Details</button>
+          <div class="timeline-details">
+            <p>The rise of integrated circuits and the miniaturization of computers, making them more accessible.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-event" data-era="3">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">1972 - 2010</h3>
+          <button class="timeline-toggle">Show Details</button>
+          <div class="timeline-details">
+            <p>Personal computers, the internet, and mobile technology revolutionize society and communication.</p>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-event" data-era="4">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3 class="timeline-title">2010 - PRESENT</h3>
+          <button class="timeline-toggle">Show Details</button>
+          <div class="timeline-details">
+            <p>Cloud computing, AI, and the digital age continue to transform how we live and work.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="timeline-event" data-era="2">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-      <h3 class="timeline-title">1964 - 1971</h3>
-      <button class="timeline-toggle">Show Details</button>
-      <div class="timeline-details">
-        <p>The rise of integrated circuits and the miniaturization of computers, making them more accessible.</p>
-      </div>
+    <div id="info-era-1" class="era-info">
+      <section class="info-area">
+        <div class="info-flex">
+          <img src="images/z3.jpg" alt="Z3 Computer" class="info-image">
+          <div class="info-text">
+            The Z3, completed by Konrad Zuse in 1941, is regarded as the world's first programmable digital computer. It utilized 2,600 relays, had a 22-bit word length, and operated at 5–10 Hz, with programs stored on punched film. Although developed in Berlin, it was never used operationally and was destroyed in an Allied bombing in December 1943. A replica was made in 1961 and is displayed at the Deutsches Museum in Munich. In 1998, it was confirmed to be Turing-complete, despite lacking conditional branching. Zuse is often considered the computer's inventor due to his groundbreaking work.
+          </div>
+        </div>
+      </section>
+      <section class="info-area">
+        <div class="info-flex">
+          <img src="images/ENIAC.jpg" alt="Electronic Numerical Integrator and Computer" class="info-image">
+          <div class="info-text">
+            ENIAC, Two professors at the University of Pennsylvania, John Mauchly and J. Presper Eckert, design and build the Electronic Numerical Integrator and Calculator (ENIAC). The machine is the first "automatic, general-purpose, electronic, decimal, digital computer," according to Edwin D. Reilly's book "Milestones in Computer Science and Information Technology" (Greenwood Press, 2003). 
+          </div>
+        </div>
+      </section>
     </div>
-  </div>
-  <div class="timeline-event" data-era="3">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-      <h3 class="timeline-title">1972 - 2010</h3>
-      <button class="timeline-toggle">Show Details</button>
-      <div class="timeline-details">
-        <p>Personal computers, the internet, and mobile technology revolutionize society and communication.</p>
-      </div>
+    <div id="info-era-2" class="era-info" style="display:none;">
+      <section class="info-area">
+        <div class="info-flex">
+          <img src="images/integratedcircuit.jpg" alt="Integrated Circuit" class="info-image">
+          <div class="info-text">
+            Integrated circuits become standard: The 1960s saw computers transition from bulky, unreliable vacuum tubes to more compact and efficient solid-state integrated circuits (ICs), or "chips". The Apollo Guidance Computer (1966) was the first to use silicon ICs in a spacecraft, demonstrating their reliability in mission-critical applications.
+          </div>
+        </div>
+      </section>
+      <section class="info-area">
+        <div class="info-flex">
+          <img src="images/arpanetr.avif" alt="Electronic Numerical Integrator and Computer" class="info-image">
+          <div class="info-text">
+           ARPANET and packet switching: In 1969, the U.S. Department of Defense launched ARPANET, the precursor to the modern internet. This network pioneered "packet switching," a novel communication method that broke data into small blocks for transfer and laid the foundation for global computer networking.
+          </div>
+        </div>
+      </section>
+      <section class="info-area">
+        <div class="info-flex">
+          <img src="images/mosp.png" alt="Electronic Numerical Integrator and Computer" class="info-image">
+          <div class="info-text">
+          Birth of the UNIX operating system: In 1969, Ken Thompson and Dennis Ritchie at Bell Labs began developing UNIX, a powerful and flexible operating system. Its design introduced key concepts like hierarchical file systems and multitasking that continue to influence modern operating systems, including Linux and macOS.
+          </div>
+        </div>
+      </section>
     </div>
-  </div>
-  <div class="timeline-event" data-era="4">
-    <div class="timeline-dot"></div>
-    <div class="timeline-content">
-      <h3 class="timeline-title">2010 - PRESENT</h3>
-      <button class="timeline-toggle">Show Details</button>
-      <div class="timeline-details">
-        <p>Cloud computing, AI, and the digital age continue to transform how we live and work.</p>
-      </div>
+    <div id="info-era-3" class="era-info" style="display:none;">
+      <section class="info-area">
+        <div class="info-flex">
+          <img src="images/pc.jpg" alt="Personal Computer" class="info-image">
+          <div class="info-text">
+            The era of personal computers, the internet, and mobile technology revolutionized society and communication from 1972 to 2010.
+          </div>
+        </div>
+      </section>
     </div>
-  </div>
-</div>
- <script>
-const burger = document.getElementById('burger');
-const nav = document.querySelector('nav');
-burger.addEventListener('click', () => {
-  nav.classList.toggle('active');
-});
-document.querySelectorAll('.timeline-toggle').forEach((btn) => {
-  btn.addEventListener('click', function() {
-    const event = this.closest('.timeline-event');
-    if (event.classList.contains('active')) {
-      event.classList.remove('active');
-    } else {
-      document.querySelectorAll('.timeline-event').forEach(ev => ev.classList.remove('active'));
-      event.classList.add('active');
+    <div id="info-era-4" class="era-info" style="display:none;">
+      <section class="info-area">
+        <div class="info-flex">
+          <img src="images/cloud.jpg" alt="Cloud Computing" class="info-image">
+          <div class="info-text">
+            Cloud computing, AI, and the digital age continue to transform how we live and work in the present era.
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script>
+    const burger = document.getElementById('burger');
+    const nav = document.querySelector('nav');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+
+    // Show only the info for the active era
+    function showEraInfo(era) {
+      document.querySelectorAll('.era-info').forEach(info => {
+        info.style.display = info.id === 'info-era-' + era ? 'block' : 'none';
+      });
     }
-  });
-});
-</script>
+    // Initial state
+    showEraInfo('1');
+
+    document.querySelectorAll('.timeline-toggle').forEach((btn) => {
+      btn.addEventListener('click', function() {
+        const event = this.closest('.timeline-event');
+        const era = event.getAttribute('data-era');
+        document.querySelectorAll('.timeline-event').forEach(ev => ev.classList.remove('active'));
+        event.classList.add('active');
+        showEraInfo(era);
+      });
+    });
+  </script>
 </body>
-</html>
