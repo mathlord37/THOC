@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Keyfigures & Inventors</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img class="hero-logo" src="images/logo.png" alt="THOC Logo">
+    </a>
+    <div class="burger" id="burger">&#9776;</div>
+    <nav>
+      <ul>
+        <li><a href="timelineofcomputing.html">Timeline Of Computing</a></li>
+        <li><a href="keyfigures.html">Key Figures & Inventors</a></li>
+        <li><a href="resourcesrefernces.html">Resources & References</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="info-area">
+      <h2>Bill Gates</h2>
+      <div class="info-flex">
+        <img src="images/Bill_Gates,_September_2024.jpg" alt="Bill Gates" class="info-image">
+        <div class="info-text">
+          Bill Gates is the co-founder of Microsoft and one of the most influential figures in the personal computing revolution. Under his leadership, Microsoft developed the Windows operating system, which became the dominant platform for PCs worldwide. Gates is also known for his philanthropic work through the Bill & Melinda Gates Foundation, focusing on global health, education, and poverty reduction.
+        </div>
+      </div>
+    </section>
+    <section class="info-area">
+      <h2>Steve Jobs</h2>
+      <div class="info-flex">
+        <img src="images/Steve_Jobs_Headshot_2010_(cropped_4).jpg" alt="Steve Jobs" class="info-image">
+        <div class="info-text">
+          Steve Jobs was the co-founder of Apple Inc. and a visionary entrepreneur who transformed several industries, including personal computing, animated movies, music, phones, tablet computing, and digital publishing. Jobs was known for his emphasis on design, user experience, and innovation, leading to iconic products like the Macintosh, iPod, iPhone, and iPad.
+        </div>
+      </div>
+    </section>
+    <section class="info-area">
+      <h2>Tim Berners-Lee</h2>
+      <div class="info-flex">
+        <img src="images/Tim_Berners-Lee.jpg" alt="Tim Berners-Lee" class="info-image">
+        <div class="info-text">
+          Tim Berners-Lee is a British computer scientist best known as the inventor of the World Wide Web. In 1989, he proposed a system for sharing information via hypertext, which became the foundation of the web. Berners-Lee developed the first web browser and server, and his work made the internet accessible and useful to billions of people around the globe.
+        </div>
+      </div>
+    </section>
+    <section class="info-area">
+      <h2>Grace Hopper</h2>
+      <div class="info-flex">
+        <img src="images/6435ac2ff18c122b760b15e5_Grace_Hopper_in_the_1940s.webp.png" alt="Grace Hopper" class="info-image">
+        <div class="info-text">
+          Grace Hopper was a pioneering computer scientist and United States Navy rear admiral. She developed the first compiler for a computer programming language and was instrumental in the creation of COBOL, one of the earliest high-level programming languages. Hopper's work made programming more accessible and helped shape the future of software development.
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const burger = document.getElementById('burger');
+    const nav = document.querySelector('nav');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

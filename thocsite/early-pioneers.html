@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Early Pioneers</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img class="hero-logo" src="images/logo.png" alt="THOC Logo">
+    </a>
+    <div class="burger" id="burger">&#9776;</div>
+    <nav>
+      <ul>
+        <li><a href="timelineofcomputing.html">Timeline Of Computing</a></li>
+        <li><a href="keyfigures.html">Key Figures & Inventors</a></li>
+        <li><a href="resourcesrefernces.html">Resources & References</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="info-area">
+      <h2>Charles Babbage</h2>
+      <div class="info-flex">
+        <img src="images/Charles_Babbage_-_1860.jpg" alt="Charles Babbage" class="info-image">
+        <div class="info-text">
+          Charles Babbage is often called the "father of the computer." He designed the first automatic mechanical computer, the Analytical Engine, in the 1830s. Although never completed in his lifetime, Babbage's designs contained many features of modern computers, including a control unit and memory.
+        </div>
+      </div>
+    </section>
+    <section class="info-area">
+      <h2>Ada Lovelace</h2>
+      <div class="info-flex">
+        <img src="images/ra1146.webp" alt="Ada Lovelace" class="info-image">
+        <div class="info-text">
+          Ada Lovelace was an English mathematician and writer, recognized as the first computer programmer. She wrote the first algorithm intended for Babbage's Analytical Engine and foresaw the potential of computers to go beyond mere calculation, imagining their use for music and art.
+        </div>
+      </div>
+    </section>
+    <section class="info-area">
+      <h2>Alan Turing</h2>
+      <div class="info-flex">
+        <img src="images/Alan_turing_header.jpg" alt="Alan Turing" class="info-image">
+        <div class="info-text">
+          Alan Turing was a British mathematician, logician, and cryptanalyst. He developed the concept of the Turing machine, a theoretical model for computation, and played a crucial role in breaking the Enigma code during World War II. Turing is widely regarded as a founding figure in computer science and artificial intelligence.
+        </div>
+      </div>
+    </section>
+    <section class="info-area">
+      <h2>John von Neumann</h2>
+      <div class="info-flex">
+        <img src="images/JohnvonNeumann-LosAlamos.gif" alt="John von Neumann" class="info-image">
+        <div class="info-text">
+          John von Neumann was a Hungarian-American mathematician and physicist who developed the architecture that underpins most modern computers. The "von Neumann architecture" describes a system where data and instructions are stored in the same memory, enabling flexible and powerful computing.
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const burger = document.getElementById('burger');
+    const nav = document.querySelector('nav');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

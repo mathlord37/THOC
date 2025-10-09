@@ -3,38 +3,177 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>Timeline Of Computing</title>
+  <title>Key Figures & Inventors</title>
   <link rel="stylesheet" href="styles/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+  <style>
+    .keyfigures-hero {
+      display: flex;
+      align-items: center;    
+      justify-content: center;
+      height: 1000px;          
+      position: relative;
+      background: url('images/background.png') center/cover no-repeat;
+      border-radius: 2.5rem;
+      margin: 30px auto 0 auto;
+      width: 95vw;
+      max-width: 1800px;
+      border: 7px solid #000;
+      overflow: hidden;
+    }
+    .keyfigures-groups {
+      display: flex;
+      gap: 3vw;
+      justify-content: center;
+      align-items: center;    
+      width: auto;
+      margin: 0;
+      z-index: 2;
+      position: relative;
+    }
+    .keyfigures-group {
+      background: rgba(255,255,255,0.95);
+      border-radius: 1.5rem;
+      padding: 1.2em 1.2em 1.8em 1.2em;
+      box-shadow: 0 4px 24px #0002;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 220px;
+      max-width: 260px;
+      position: relative;
+    }
+    .keyfigures-avatars {
+      display: grid;
+      grid-template-columns: repeat(2, 125px);
+      grid-template-rows: repeat(2, 125px);
+      gap: 8px;
+      margin-bottom: 1em;
+    }
+    .keyfigures-avatar {
+      width: 125px;
+      height: 125px;
+      border-radius: 0.7em;
+      object-fit: cover;
+      border: 2px solid #222;
+      background: #eee;
+    }
+.keyfigures-plus {
+  margin: 0.5em 0 0.5em 0;
+  background: #222;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  border: 3px solid #fff;
+  cursor: pointer;
+  z-index: 3;
+  position: static;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+.keyfigures-plus:hover {
+  background: #444;
+  color: #fff;
+  border-color: #2980b9;
+}
+    .keyfigures-label {
+      background: #444;
+      color: #fff;
+      padding: 0.5em 1.5em;
+      border-radius: 1em;
+      font-size: 1.1em;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 8px #0001;
+      min-height: 2.5em;
+      white-space: nowrap;
+    }
+    @media (max-width: 900px) {
+      .keyfigures-hero {
+        flex-direction: column;
+        height: auto;
+        min-height: 420px;
+        padding-bottom: 30px;
+      }
+      .keyfigures-groups {
+        flex-direction: column;
+        gap: 2em;
+        align-items: center;
+      }
+      .keyfigures-group {
+        min-width: 180px;
+        max-width: 90vw;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
-  <a href="index.html">
-    <img class="hero-logo" src="images/logo.png" alt="THOC Logo">
-  </a>
-  <div class="burger" id="burger">&#9776;</div>
-  <nav>
-    <ul>
-      <li><a href="timelineofcomputing.html">Timeline Of Computing</a></li>
-      <li><a href="keyfigures.html">Key Figures & Inventors</a></li>
-      <li><a href="resourcesrefernces.html">Resources & References</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
-</header>
+    <a href="index.html">
+      <img class="hero-logo" src="images/logo.png" alt="THOC Logo">
+    </a>
+    <div class="burger" id="burger">&#9776;</div>
+    <nav>
+      <ul>
+        <li><a href="timelineofcomputing.html">Timeline Of Computing</a></li>
+        <li><a href="keyfigures.html">Key Figures & Inventors</a></li>
+        <li><a href="resourcesrefernces.html">Resources & References</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
   <main>
-  <div class="hero">
-    <div class="hero-content">
-      </p>
+    <div class="keyfigures-hero">
+      <div class="keyfigures-groups">
+        <!-- Modern Tech Leaders -->
+        <div class="keyfigures-group">
+          <div class="keyfigures-avatars">
+            <img src="images/Bill_Gates,_September_2024.jpg" alt="Bill Gates" class="keyfigures-avatar">
+            <img src="images/Steve_Jobs_Headshot_2010_(cropped_4).jpg" alt="Steve Jobs" class="keyfigures-avatar">
+            <img src="images/Tim_Berners-Lee.jpg" alt="Tim Berners-Lee" class="keyfigures-avatar">
+            <img src="images/6435ac2ff18c122b760b15e5_Grace_Hopper_in_the_1940s.webp.png" alt="Grace Hopper" class="keyfigures-avatar">
+          </div>
+          <a class="keyfigures-plus" href="modern-tech-leaders.html" title="More about Modern Tech Leaders">+</a>
+          <div class="keyfigures-label">Modern Tech Leaders</div>
+        </div>
+        <!-- Early Pioneers -->
+        <div class="keyfigures-group">
+          <div class="keyfigures-avatars">
+            <img src="images/Charles_Babbage_-_1860.jpg" alt="Charles Babbage" class="keyfigures-avatar">
+            <img src="images/ra1146.webp" alt="Ada Lovelace" class="keyfigures-avatar">
+            <img src="images/Alan_turing_header.jpg" alt="Alan Turing" class="keyfigures-avatar">
+            <img src="images/JohnvonNeumann-LosAlamos.gif" alt="John von Neumann" class="keyfigures-avatar">
+          </div>
+          <a class="keyfigures-plus" href="early-pioneers.html" title="More about Early Pioneers">+</a>
+          <div class="keyfigures-label">Early Pioneers</div>
+        </div>
+        <!-- 20th Century Inventors -->
+        <div class="keyfigures-group">
+          <div class="keyfigures-avatars">
+            <img src="images/C.E._Shannon._Tekniska_museet_43069_(cropped).jpg" alt="Claude Shannon" class="keyfigures-avatar">
+            <img src="images/Lc3_2018_(263682303)_(cropped).jpeg" alt="Linus Torvalds" class="keyfigures-avatar">
+            <img src="images/Dr_Vint_Cerf_ForMemRS_(cropped).jpg" alt="Vint Cerf" class="keyfigures-avatar">
+            <img src="images/Donald_Ervin_Knuth_(cropped).jpg" alt="Donald Knuth" class="keyfigures-avatar">
+          </div>
+          <a class="keyfigures-plus" href="20th-century-inventors.html" title="More about 20th Century Inventors">+</a>
+          <div class="keyfigures-label">20th Century inventors</div>
+        </div>
+      </div>
     </div>
-  </div>
-</main>
-<script>
-  const burger = document.getElementById('burger');
-  const nav = document.querySelector('nav');
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-</script>
+    <!-- You can add more detailed info sections below if you want popups or expandable content -->
+  </main>
+  <script>
+    const burger = document.getElementById('burger');
+    const nav = document.querySelector('nav');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
