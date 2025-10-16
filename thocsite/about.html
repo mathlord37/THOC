@@ -3,38 +3,77 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>Timeline Of Computing</title>
+  <title>About | Timeline Of Computing</title>
   <link rel="stylesheet" href="styles/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-  <a href="index.html">
-    <img class="hero-logo" src="images/logo.png" alt="THOC Logo">
-  </a>
-  <div class="burger" id="burger">&#9776;</div>
-  <nav>
-    <ul>
-      <li><a href="timelineofcomputing.html">Timeline Of Computing</a></li>
-      <li><a href="keyfigures.html">Key Figures & Inventors</a></li>
-      <li><a href="resourcesrefernces.html">Resources & References</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
-</header>
+    <a href="index.html">
+      <img class="hero-logo" src="images/logo.png" alt="THOC Logo">
+    </a>
+    <div class="burger" id="burger">&#9776;</div>
+    <nav>
+      <ul>
+        <li><a href="timelineofcomputing.html">Timeline Of Computing</a></li>
+        <li><a href="keyfigures.html">Key Figures & Inventors</a></li>
+        <li><a href="resourcesrefernces.html">Resources & References</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
   <main>
-  <div class="hero">
-    <div class="hero-content">
+    <section class="info-area">
+      <h2>Project Purpose</h2>
+      <p>
+        This website is designed to educate users about the history of digital technology. Its main purpose is to provide an interactive timeline that helps users understand the evolution of computers, exploring key facts and images. The goal is to make the history of computing accessible and engaging for everyone.
       </p>
-    </div>
-  </div>
-</main>
-<script>
-  const burger = document.getElementById('burger');
-  const nav = document.querySelector('nav');
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-</script>
+    </section>
+    <section class="info-area">
+      <h2>Who Is It For?</h2>
+      <p>
+        The primary users are students and curious individuals seeking to learn about computers. The site is built for easy navigation, with clear timelines and brief, informative content. It is suitable for use in classrooms, educational settings, or at home for self-guided learning.
+      </p>
+    </section>
+    <section class="info-area">
+      <h2>How To Use</h2>
+      <ul>
+        <li>Explore the interactive timeline to see how computers have evolved over the years.</li>
+        <li>Click on key figures and inventors to learn about their contributions.</li>
+        <li>Use the resources and references page for further reading and research.</li>
+      </ul>
+    </section>
+    <section class="info-area">
+      <h2>Content & Sources</h2>
+      <p>
+        Information and images are sourced from reputable websites, books, and museums, including the Computer History Museum, Wikipedia, and Encyclopedia Britannica. See the <a href="resourcesrefernces.html">Resources & References</a> page for a full list.
+      </p>
+    </section>
+    <section class="info-area">
+      <h2>Contact & Feedback</h2>
+      <p>
+        For questions, feedback, or suggestions, please use the contact form (if available) or reach out via the provided email address.
+      </p>
+    </section>
+    <section class="info-area">
+      <h2>Acknowledgements</h2>
+      <p>
+        Special thanks to all contributors, educators, and sources that made this project possible.
+      </p>
+    </section>
+    <section class="info-area">
+      <h2>Last Updated</h2>
+      <p>
+        October 2025
+      </p>
+    </section>
+  </main>
+  <script>
+    const burger = document.getElementById('burger');
+    const nav = document.querySelector('nav');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>

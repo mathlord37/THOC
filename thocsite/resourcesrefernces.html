@@ -3,38 +3,58 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>Timeline Of Computing</title>
+  <title>Resources & References</title>
   <link rel="stylesheet" href="styles/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-  <a href="index.html">
-    <img class="hero-logo" src="images/logo.png" alt="THOC Logo">
-  </a>
-  <div class="burger" id="burger">&#9776;</div>
-  <nav>
-    <ul>
-      <li><a href="timelineofcomputing.html">Timeline Of Computing</a></li>
-      <li><a href="keyfigures.html">Key Figures & Inventors</a></li>
-      <li><a href="resourcesrefernces.html">Resources & References</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
-</header>
+    <a href="index.html">
+      <img class="hero-logo" src="images/logo.png" alt="THOC Logo">
+    </a>
+    <div class="burger" id="burger">&#9776;</div>
+    <nav>
+      <ul>
+        <li><a href="timelineofcomputing.html">Timeline Of Computing</a></li>
+        <li><a href="keyfigures.html">Key Figures & Inventors</a></li>
+        <li><a href="resourcesrefernces.html">Resources & References</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
   <main>
-  <div class="hero">
-    <div class="hero-content">
-      </p>
-    </div>
-  </div>
-</main>
-<script>
-  const burger = document.getElementById('burger');
-  const nav = document.querySelector('nav');
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-</script>
+    <section class="info-area">
+      <h2>Websites</h2>
+      <ul>
+        <li><a href="https://www.computerhistory.org/" target="_blank">Computer History Museum</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/History_of_computing" target="_blank">Wikipedia: History of Computing</a></li>
+        <li><a href="https://www.britannica.com/technology/computer" target="_blank">Encyclopedia Britannica: Computer</a></li>
+        <li><a href="https://www.bbc.co.uk/bitesize/guides/zwsbwmn/revision/1" target="_blank">BBC Bitesize: History of Computers</a></li>
+        <li><a href="https://www.britannica.com/biography/Alan-Turing" target="_blank">Britannica: Alan Turing</a></li>
+      </ul>
+    </section>
+    <section class="info-area">
+      <h2>Articles & Journals</h2>
+      <ul>
+        <li><a href="https://www.nature.com/articles/d41586-019-02212-4" target="_blank">Nature: The birth of computer science</a></li>
+        <li><a href="https://www.scientificamerican.com/article/the-turing-test/" target="_blank">Scientific American: The Turing Test</a></li>
+        <li><a href="https://cacm.acm.org/magazines/2012/1/145401-the-father-of-information-theory/fulltext" target="_blank">CACM: The Father of Information Theory</a></li>
+      </ul>
+    </section>
+    <section class="info-area">
+      <h2>Image Credits</h2>
+      <ul>
+        <li>Images from Wikimedia Commons, Wikipedia, and public domain sources.</li>
+        <li>Some images from <a href="https://www.computerhistory.org/" target="_blank">Computer History Museum</a>.</li>
+      </ul>
+    </section>
+  </main>
+  <script>
+    const burger = document.getElementById('burger');
+    const nav = document.querySelector('nav');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
